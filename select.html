@@ -1,0 +1,128 @@
+<!doctype html>
+<head>
+<title>Select Test</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="betterselect.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+</head>
+
+<body>
+
+<form method="GET">
+
+	<input type="hidden" name="category" id="categoryval" class="bettersubmit" value="" />
+	Category: <input class="select" id="categorysel" data-select-name="category" value="Select One" onfocus="this.blur()" /><span class="select-arrow">&#8227;</span>
+
+	<br /><br />
+
+	<input type="hidden" name="county" id="countyval" class="bettersubmit" value="" />
+	County: <input class="select" id="countysel" data-select-name="county" value="Select One" onfocus="this.blur()" /><span class="select-arrow">&#8227;</span>
+
+	<br /><br />
+
+	<input type="hidden" name="condition" id="conditionval" class="bettersubmit" value="" />
+	Condition: <input class="select" id="conditionsel" data-select-name="condition" value="Select One" onfocus="this.blur()" /><span class="select-arrow">&#8227;</span>
+
+	<br /><br />
+
+	<input type="submit" value="Submit" />
+</form>
+
+<div id="selectcover" data-curr-select=""></div>
+
+<div id="county" class="betterselect">
+
+	<div class="scroll-container">
+
+	<div class="select-title">County</div>
+	<form>
+	<input class="select-search" placeholder="Search" >
+	</form>	
+	<div class="option big" data-value="Cornwall">
+		<span class="select-separator"></span>
+		<div class="county-image" style="background: url(http://letsflogit.co.uk/images/fv_Cornwall.jpg) no-repeat; background-size: 50px 50px;"></div>
+		<span class="label">Cornwall</span>
+	</div>
+		
+	<div class="option big" data-value="Cardiff">
+		<span class="select-separator"></span>
+		<div class="county-image" style="background: url(http://letsflogit.co.uk/images/fv_Cardiff.jpg) no-repeat; background-size: 50px 50px;"></div>
+		<span class="label">Cardiff</span>
+	</div>
+
+	<div class="bottom" data-value="">
+		<span class="select-separator"></span>
+	</div>
+
+	<div class="clear">&nbsp;</div>
+
+</div>
+</div>
+
+<div id="condition" class="betterselect">
+
+	<div class="select-title">Condition</div>
+
+	<div class="option small" data-value="New">
+		<span class="select-separator"></span>
+		<span class="label">New</span>
+	</div>
+
+	<div class="option small" data-value="Used">
+		<span class="select-separator"></span>
+		<span class="label">Used</span>
+	</div>
+
+	<div class="bottom" data-value="">
+		<span class="select-separator"></span>
+	</div>
+
+</div>
+
+<div id="category" class="betterselect">
+
+	<div class="select-title">Category</div>
+
+	<div class="option small" data-value="clothing">
+		<span class="select-separator"></span>
+		<span class="label">Clothing & Accessories</span>
+	</div>
+
+	<div class="option small" data-value="health">
+		<span class="select-separator"></span>
+		<span class="label">Health & Beauty</span>
+	</div>
+
+	<div class="option small" data-value="film">
+		<span class="select-separator"></span>
+		<span class="label">Films & Games</span>
+	</div>
+
+	<div class="option small" data-value="home">
+		<span class="select-separator"></span>
+		<span class="label">Home & Garden</span>
+	</div>
+
+	<div class="option small" data-value="electronics">
+		<span class="select-separator"></span>
+		<span class="label">Electronics</span>
+	</div>
+
+	<div class="option small" data-value="leisure">
+		<span class="select-separator"></span>
+		<span class="label">Leisure</span>
+	</div>
+
+	<div class="option small" data-value="vehicles">
+		<span class="select-separator"></span>
+		<span class="label">Vehicles</span>
+	</div>
+
+	<div class="bottom" data-value="">
+		<span class="select-separator"></span>
+	</div>
+
+</div>
+
+</body>
